@@ -1,0 +1,65 @@
+{
+	"folders": [
+		{
+			"path": "doglife3"
+		}
+	],
+	"settings": {
+		"launch": {
+			"configurations": [
+				{
+					"name": "Launch via NPM",
+					"request": "launch",
+					"runtimeArgs": [
+						"run-script",
+						"debug"
+					],
+					"runtimeExecutable": "npm",
+					"skipFiles": [
+						"<node_internals>/**"
+					],
+					"type": "node"
+				},
+				{
+					"name": "Python Debugger: Flask",
+					"type": "debugpy",
+					"request": "launch",
+					"module": "flask",
+					"env": {
+						"FLASK_APP": "app.py",
+						"FLASK_DEBUG": "1"
+					},
+					"args": [
+						"run",
+						"--no-debugger",
+						"--no-reload"
+					],
+					"jinja": true,
+					"autoStartBrowser": false
+				},
+				{
+					"name": "Launch Chrome",
+					"request": "launch",
+					"type": "chrome",
+					"url": "http://localhost:8080",
+					"webRoot": "${workspaceFolder}"
+				},
+				{
+					"name": "Attach to Chrome",
+					"port": 9222,
+					"request": "attach",
+					"type": "chrome",
+					"webRoot": "${workspaceFolder}"
+				},
+				{
+					"type": "msedge",
+					"request": "launch",
+					"name": "Open main.html",
+					"file": "c:\\Users\\User\\Desktop\\doglife3\\index.html\\main.html"
+				}
+			],
+			"compounds": [],
+			"version": "0.2.0"
+		}
+	}
+}
