@@ -1,29 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <link rel="stylesheet" type="text/css" href="C:\Users\User\Desktop\doglife3\css\main.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de comida</title>
+    <title>Site gostoso</title>
+    <style>
+        // Reset de estilos para evitar comportamentos indesejados 
+          {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        // Estilos para o header principal (logo/barra de pesquisa)
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #969696;
+            padding: 10px;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        // Estilos para o menu principal
+        .menu {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class ="header-1">
+// header principal
+    <div class="header">
+        <div class="logo"></div>
+        <img src="(inserir a logo aqui)"
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Pesquisar...">
+            <button>Buscar</button>
+        </div>
     </div>
-    <header class = "menu-principal">
-        <main>
-
-        <div class="logo">
-           <img src="C:\Users\User\Desktop\doglife3\imagens\logo.png" width="130" height="100">
-        </div>
-          <div class="redes-sociais">
-        <ul>
-            <li><a href="" ><img src="C:\Users\User\Desktop\doglife3\imagens\insta-logo.png" width="20" height="20"></a></li>
-            <li><a href="" ><img src="C:\Users\User\Desktop\doglife3\imagens\whats-logo.png" width="20" height="20"></a></li>
-        </ul>
-        </div>
-
-
-</main>
+// menu principal
+    <div class="menu">
+        <a href="#">Cardápio</a>
+        <a href="#">Cupons</a>
+        <a href="#">Delivery</a>
+    </div>
 </body>
 </html>
